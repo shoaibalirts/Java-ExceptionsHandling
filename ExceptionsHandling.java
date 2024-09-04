@@ -1,13 +1,20 @@
 
-import java.util.Random;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ExceptionsHandling {
 
     public static void main(String[] args) {
+        try {
+            method1();
+        } catch (IOException e) {
+            System.out.println("File not found");
+        }
+
         /* 
         int d = 0;
         int a = 42 / d;
-        System.err.println(a);
+     ystem.err.println(a);
          */
  /* 
         try {
@@ -16,10 +23,10 @@ public class ExceptionsHandling {
             System.out.println("This will not be printed");
         } catch (ArithmeticException e) {
             System.err.println(e);
-            System.err.println("Division by zero");
-        }
+         
+     
          */
-
+ /* 
         int a = 0, b = 0, c = 0;
         int d = 0;
         Random r = new Random();
@@ -38,7 +45,26 @@ public class ExceptionsHandling {
                 a = 0;
 
             }
-            System.out.println("a: " + a);
-        }
+         
+     
+         */
     }
+
+    public static void method1() throws IOException {
+        method2();
+        // try {
+
+        // } catch (Exception e) {
+        // }
+    }
+
+    public static void method2() throws IOException {
+        // try {
+        FileReader fr = new FileReader("input.txt");
+        //     System.out.println("File found" + fr);
+        // } catch (Exception e) {
+        //     System.out.println("File not found");
+        // }
+    }
+
 }
