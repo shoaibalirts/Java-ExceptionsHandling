@@ -1,7 +1,14 @@
 # Exceptions Handling in Java
 
-        <h3>Unchecked exceptions</h3
+<ul>
+    <li>
+        <h3>Unchecked exceptions</h3>
         <p>Java compiler does not handle unchecked exceptions</p>
+    </li>
 
-        <h3>Checked exceptions</h3
+    <li>
+        <h3>Checked exceptions</h3>
         <p>Java compiler does not handle unchecked exceptions</p>
+    </li>
+
+</ul>
